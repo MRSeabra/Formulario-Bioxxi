@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem - vindo | Bioxxi</title>
+    <meta name="description" content="Bem - vindo">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body id="form-bv">
+
+    <main>
+        <div>
+            <div class="titulo container">
+                <p class="font-1-l cor-3">Respostas em até 24h</p>
+                <h1 class="bv-titulo font-1-xxl cor-a1">Seja Bem-vindo à Bioxxi<span class="cor-v1">.</span></h1>
+            </div>
+        </div>
+
+        <div class="bv-contato container">
+            <section class="bv-contato-dados cor-0" aria-label="Endereço">
+                <h2 class="font-1-m">RIO DE JANEIRO</h2>
+                <div class="bv-bloco">
+                    <div class="bv-contato-endereco font-1-s">
+                        <p>Rua Cel. Cabrita, 17</p>
+                        <p>São Cristóvão - RJ</p>
+                        <p>CEP: 20920-400</p>
+                    </div>
+                    <address class="bv-contato-meios font-1-s">
+                        <a href="mailto:contato@bioxxi.com">contato@bioxxi.com</a>
+                        <a href="tel:+552135459696">+55 (21) 3545-9696</a>
+                        <a href="tel:+5521996440617">+55 (21) 99644-0617</a>
+                        <a href="tel:+552135459646">+55 (21) 3545-9646</a>
+                    </address>
+                    <div class="bv-contato-redes">
+                        <a href="https://www.facebook.com/bioxxi.com.br" target="_blank">
+                            <img src="./img/redes/facebook-v.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/bioxxi.com.br/" target="_blank">
+                            <img src="./img/redes/instagram-v.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC2cjY1j4UdUe7rFGbdQkH7w" target="_blank">
+                            <img src="./img/redes/youtube-v.svg" alt="Youtube">
+                        </a>
+                        <a href="https://www.linkedin.com/company/bioxxi/" target="_blank">
+                            <img src="./img/redes/linkedin-v.svg" alt="Linkedin">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="bv-contato-formulario" aria-label="Formulário">
+                <form class="bv-form" action="./form-bv.html">
+                    <div class="col-2">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for="nome">Login</label>
+                        <input type="text" id="login" name="login" placeholder="Seu login">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(21) 99999-9999">
+                    </div>
+                    <div class="col-2">
+                        <label for="e-mail">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="contato@email.com">
+                    </div>
+                    <div class=".bv-option ">
+                        <label for="setor">Setor</label>
+                        <select name="setor" id="setor">
+                            <option value="11">Setor 1</option>
+                            <option value="2">Setor 2</option>
+                            <option value="3">Setor 3</option>
+                            <option value="4">Setor 4</option>
+                            <option value="5">Setor 5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha">
+                    </div>
+                    <button class="botao col-2">Enviar</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

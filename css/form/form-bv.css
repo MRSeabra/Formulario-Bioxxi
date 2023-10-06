@@ -1,0 +1,295 @@
+/* Reset */
+html {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: calc(100vh - 120px);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor4);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Conteúdo geral dos conteineirs */
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo {
+  padding-top: 60px;
+}
+
+.bv-titulo {
+  opacity: 0.5961;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+/* Background do Body */
+#form-bv {
+  padding-bottom: 60px;
+  background: linear-gradient(var(--cor0) 550px, var(--v1) 0px);
+}
+
+/* Formulário Boas-Vindas parte dos contatos(lateral azul) */
+.bv-contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.bv-contato-dados,
+.bv-contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.bv-contato-dados {
+  border-radius: 5px 0 0 5px;
+  background: var(--a2);
+}
+
+.bv-contato-formulario {
+  border-radius: 0 5px 5px 0;
+  background: var(--cor0);
+}
+
+.bv-contato-dados h2 {
+  margin-bottom: 60px;
+}
+
+.bv-contato-endereco {
+  margin-bottom: 32px;
+  padding-left: 28px;
+  background: url(../../img/icones/local-v.svg) no-repeat;
+}
+
+.bv-contato-endereco p {
+  margin-bottom: 8px;
+}
+
+.bv-contato-meios a {
+  display: block;
+  max-width: max-content;
+  margin-bottom: 8px;
+  padding-left: 28px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bv-contato-meios a:hover {
+  color: var(--v2);
+}
+
+.bv-contato-meios a:first-child {
+  background: url(../../img/icones/email-v.svg) no-repeat;
+  margin-bottom: 32px;
+}
+
+.bv-contato-meios a:nth-child(2) {
+  background: url(../../img/icones/support-call-v.svg) no-repeat;
+}
+
+.bv-contato-meios a:nth-child(3) {
+  margin-bottom: 32px;
+}
+
+.bv-contato-meios a:nth-child(4) {
+  background: url(../../img/icones/telefone-v.svg) no-repeat;
+  margin-bottom: 60px;
+}
+
+.bv-contato-redes {
+  display: flex;
+  gap: 32px;
+  padding-left: 28px;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.bv-contato-redes a:hover {
+  transform: scale(1.3);
+}
+
+/* Formulário Boas-Vindas parte do formulário(lateral direita branca) */
+.bv-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bv-form label {
+  display: block;
+  font: 600 1rem/1.5 "Open Sans", sans-serif;
+  margin-bottom: 4px;
+}
+
+.bv-form .col-2 {
+  grid-column: span 2;
+}
+
+.bv-form input[type="text"],
+.bv-form input[type="email"],
+.bv-form select[name="setor"],
+.bv-form input[type="password"],
+.bv-form option {
+  font: 400 1rem/1.5 "Open Sans", sans-serif;
+  background: var(--cor1);
+  border: 1px solid var(--cor2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bv-form input[type="text"]:focus,
+.bv-form input[type="email"]:focus,
+.bv-form select[name="setor"]:focus,
+.bv-form input[type="password"]:focus {
+  outline: none;
+  border-color: var(--v2);
+  background: var(--cor0);
+  box-shadow: 0 0 0 2px var(--v1);
+}
+
+.bv-form .botao {
+  display: inline-block;
+  margin: 50px auto 0;
+  padding: 16px 52px;
+  background: var(--v2);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: var(--cor0);
+  font: 600 1.125rem/1.35 "Open Sans", sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.bv-form .botao:hover {
+  background: var(--v1);
+}
+
+/* Responsivo Formulário */
+@media (max-width: 800px) {
+  /* Boas-Vindas parte dos contatos(lateral azul) */
+  .bv-contato {
+    grid-template-columns: 1fr;
+  }
+
+  .bv-bloco {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .bv-contato-dados h2 {
+    text-align: center;
+  }
+
+  /* Ajustes das colunas (lateral azul) */
+  .bv-contato-meios {
+    grid-row: 1;
+  }
+
+  .bv-contato-endereco {
+    grid-column-end: 3;
+  }
+
+  .bv-contato-redes {
+    grid-column-end: 3;
+    grid-row: 3;
+  }
+
+  /* Ajuste de padding e margin (lateral azul) */
+  .bv-contato-dados,
+  .bv-contato-formulario {
+    padding: 30px;
+  }
+
+  .bv-contato-dados {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .bv-contato-formulario {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .bv-contato-dados h2 {
+    margin-bottom: 32px;
+  }
+
+  .bv-contato-endereco {
+    margin-bottom: 4px;
+  }
+
+  .bv-contato-meios a:first-child,
+  .bv-contato-meios a:nth-child(3),
+  .bv-contato-meios a:nth-child(4) {
+    margin-bottom: 12px;
+  }
+
+  .bv-contato-endereco p,
+  .bv-contato-meios a:nth-child(2) {
+    margin-bottom: 4px;
+  }
+
+  .bv-contato-redes {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Boas-Vindas parte do formulário(lateral direita branca) e da lateral azul */
+  .bv-form,
+  .bv-blocos {
+    grid-template-columns: 1fr;
+  }
+
+  .bv-form .col-2,
+  .bv-contato-meios,
+  .bv-contato-endereco,
+  .bv-contato-redes {
+    grid-column: 1;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+  }
+
+  .bv-titulo {
+    font-size: 2.5rem;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}

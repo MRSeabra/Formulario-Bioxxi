@@ -1,0 +1,53 @@
+/* Cores utilizadas no formulário */
+
+:root {
+  --cor0: #fff;
+  --cor1: #f7f7f7;
+  --cor2: #ededed;
+  --cor3: #b2b2b2;
+  --cor4: #111;
+  --cor5: #000;
+  --v1: #61ce70;
+  --v2: #41b17e;
+  --a1: #0083ca;
+  --a2: #005988;
+  --a3: #4054b2;
+  --gradiente: linear-gradient(#61ce70, #41b17e);
+  --gradiente2: linear-gradient(#18d674, #26edcc);
+}
+
+.cor-0 {
+  color: var(--cor0);
+}
+.cor-1 {
+  color: var(--cor1);
+}
+.cor-2 {
+  color: var(--cor2);
+}
+
+.cor-3 {
+  color: var(--cor3);
+}
+
+.cor-4 {
+  color: var(--cor4);
+}
+.cor-5 {
+  color: var(--cor5);
+}
+.cor-v1 {
+  color: var(--v1);
+}
+.cor-v2 {
+  color: var(--v2);
+}
+.cor-a1 {
+  color: var(--a1);
+}
+.cor-a2 {
+  color: var(--a2);
+}
+.cor-a3 {
+  color: var(--a3);
+}
